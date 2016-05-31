@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{A6368EE2-448E-42A2-BB00-C26D91078BDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet.Identity.PostgreSQL", "..\..\AspNet.Identity.PostgreSQL\src\AspNet.Identity.PostgreSQL.csproj", "{21018D34-2B0B-4EE1-BD1D-6CC6EC02CECF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6368EE2-448E-42A2-BB00-C26D91078BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6368EE2-448E-42A2-BB00-C26D91078BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6368EE2-448E-42A2-BB00-C26D91078BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6368EE2-448E-42A2-BB00-C26D91078BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21018D34-2B0B-4EE1-BD1D-6CC6EC02CECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21018D34-2B0B-4EE1-BD1D-6CC6EC02CECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21018D34-2B0B-4EE1-BD1D-6CC6EC02CECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21018D34-2B0B-4EE1-BD1D-6CC6EC02CECF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+﻿<div layout="column" layout-fill="" layout-align="top">
+
+    <div ng-show="!complete">
+        <p>
+            You came here looking for something.  What was it?
+        </p>
+        <form name="theForm" novalidate>
+            <md-input-container class="md-block">
+                <label>I was looking for</label>
+                <input type="text" ng-model="model.Data" ng-minlength="3" ng-maxlength="100" required>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Email Address (Optional)</label>
+                <input type="text" ng-model="model.Email" ng-minlength="7" ng-maxlength="100">
+            </md-input-container>
+            <div layout="row" layout-align="center center">
+                <md-button ng-click="submit()" ng-disabled="!theForm.$valid" class="md-primary md-raised">
+                    Submit
+                </md-button>
+            </div>
+        </form>
+    </div>
+    <p ng-show="complete">
+        Thank you for assisting us with our plan for World Domination.
+    </p>
+</div>
+
+<div flex=""></div>

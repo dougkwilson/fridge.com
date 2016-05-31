@@ -1,0 +1,72 @@
+﻿<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fridge.com</title>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-87421-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	@Styles.Render("~/Content/css")
+</head>
+<body>
+	<div class="sidenavdemoBasicUsage" ng-controller="AppCtrl" ng-app="fridge" layout="column" layout-fill="" ng-cloak="">
+
+		<md-toolbar class="md-hue-2">
+			<div class="md-toolbar-tools">
+				<md-icon md-svg-icon="/Content/logo.svg" style="width: 50px;height: 50px;padding: 5px 5px 5px 0;"></md-icon>
+				<h2>Fridge.com</h2>
+				<span flex=""></span>
+				<md-button class="md-icon-button" aria-label="Settings" ng-click="toggleLeft()" hide-gt-sm="">
+					<md-icon md-svg-icon="menu"></md-icon>
+				</md-button>
+			</div>
+		</md-toolbar>
+
+		<section layout="row" flex="">
+
+			<md-sidenav class="md-sidenav-left md-whiteframe-4dp" md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left">
+
+				<md-toolbar class="md-theme-indigo">
+					<h1 class="md-toolbar-tools">Contact Information</h1>
+				</md-toolbar>
+
+
+				<md-content ng-controller="LeftCtrl" layout-padding="">
+					<md-icon md-svg-icon="/Content/logo.svg" style="width: 100px;height: 100px;"></md-icon>
+
+					<p class="h-adr">
+						<span class="p-org">Fridge Productions</span>
+						<span class="p-street-address">1881 Portland Place</span>
+						<span class="p-locality">Kelowna</span>,
+						<span class="p-region">BC</span>
+						<span class="p-postal-code">V1V 1P9</span>
+						<span class="p-country-name">Canada</span>
+						<br />
+						<span class="p-tel">tel: (250) 575-5656</span>
+						<span class="block">email: <a class="u-email" href="mailto:contact@fridge.com">contact@fridge.com</a></span>
+						<span class="block">website: <a class="u-url" href="https://fridge.com">https://fridge.com</a></span>
+					</p>
+
+				</md-content>
+			</md-sidenav>
+
+			<md-content flex="" layout-padding="">
+				@RenderBody()
+			</md-content>
+
+		</section>
+	</div>
+
+	@Scripts.Render("~/Scripts/ng")
+	@Scripts.Render("~/Scripts/app")
+</body>
+</html>
